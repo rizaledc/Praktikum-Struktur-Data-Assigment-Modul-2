@@ -11,7 +11,17 @@ Dengan adanya praktikum ini, penulis telah menargetkan beberapa tujuan diantaran
    
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+Array atau larik merupakan kumpulan data yang setiap elemennya bertipe sama yang tersusun secara linear dan saling berdekatan dalam memori. Array sangat berguna dalam pemrograman utamanya dalam pengolahan data besar dengan waktu yang singkat dan efisien. Array dapat di akses dengan membedakan indeks arraynya sehingga array memiliki indeks yang menunjukkan posisinya, indeks array dimulai dari indeks ke-0. 
+
+Terdapat beberapa hal yang perlu diperhatikan dalam penggunaan array, diantaranya sistem sintaksis, sematik, dan kebenaran logika (Hanief & Jepriana, 2020). Dimana sintaksis ini merupakan struktur tata bahasa yang digunakan dalam program (Ed.D & Afifah, 2021). Dalam array, terdapat sintaksis yang dapat digunakan untuk mengakses dan memanipulasi elemen-elemen yang ada di dalamnya sehingga hal ini dapat memudahkan programer dalam menggunakan array. Terdapat beberapa keuntungan dalam penggunaan array, sebagai berikut:
+
+1. Array dapat dengan mudah mengelompokkan data yang terkait dalam satu struktur.
+2. Dalam hal akses data, elemen array dapat diakses lebih cepat daripada mencari data secara linear.
+3. Dalam melakukan perulangan, kita dapat melakukan operasi pada seluruh elemen array dengan efisien.
+
+ 
+
+
 
 ## Guided 
 
@@ -54,4 +64,6 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+Ed.D, P. Z., & Afifah, W. (2021). Analisis Konten Etnografi & Grounded 
+Theory, dan Hermeneutika Dalam Penelitian. Jakarta Timur: PT Bumi 
+Askara.
