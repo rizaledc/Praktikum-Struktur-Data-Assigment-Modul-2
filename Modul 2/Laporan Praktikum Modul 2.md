@@ -67,3 +67,5 @@ Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran
 Ed.D, P. Z., & Afifah, W. (2021). Analisis Konten Etnografi & Grounded 
 Theory, dan Hermeneutika Dalam Penelitian. Jakarta Timur: PT Bumi 
 Askara.
+Hanief, S., & Jepriana, I. (2020). Konsep Algoritme dan Aplikasinya Dalam 
+Bahasa Pemrograman C++. Penerbit Andi. Yogyakarta: Andi.
