@@ -54,6 +54,8 @@ Output:
 ```C++
 Suhu pada hari ke-4: 27.8 derajat Celcius
 ```
+
+Pada kode di atas, kita membuat array suhu dari hari ke-1 sampai suhu hari ke-7. Kemudian, kita coba akses array pada indeks ke-3 yang digunakan untuk mengakses suhu pada hari ke-4. Kita mengakses pada indeks ke-3 karena indeks pada array dimulai dari 0.
  
 ## Guided 
 
