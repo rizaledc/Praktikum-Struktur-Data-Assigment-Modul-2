@@ -19,10 +19,42 @@ Terdapat beberapa hal yang perlu diperhatikan dalam penggunaan array, diantarany
 2. Dalam hal akses data, elemen array dapat diakses lebih cepat daripada mencari data secara linear.
 3. Dalam melakukan perulangan, kita dapat melakukan operasi pada seluruh elemen array dengan efisien.
 
+Terdapat beberapa jenis array yang sering digunakan beberapa programer, diantaranya:
+
+**1. Array Satu Dimensi**
+
+Array satu dimensi ini merupakan kumpulan elemen sama yang disimpan dalam satu baris saja dan dapat diakses menggunakan indeks dari arraynya.
+
+Contoh array satu dimensi:
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Deklarasi array satu dimensi
+    double suhu[7]; // Array dengan 7 elemen
+
+    // Menginisialisasi nilai-nilai suhu
+    suhu[0] = 28.5; // Hari ke-1
+    suhu[1] = 30.0; // Hari ke-2
+    suhu[2] = 29.3; // Hari ke-3
+    suhu[3] = 31.2; // Hari ke-4
+    suhu[4] = 27.8; // Hari ke-5
+    suhu[5] = 26.5; // Hari ke-6
+    suhu[6] = 32.0; // Hari ke-7
+
+    // Mengakses dan mencetak nilai suhu untuk hari ke-4
+    cout << "Suhu pada hari ke-4: " << suhu[3] << " derajat Celsius" << endl;
+
+    return 0;
+}
+```
+Output:
+```C++
+Suhu pada hari ke-4: 27.8 derajat Celcius
+```
  
-
-
-
 ## Guided 
 
 ### 1. [Nama Topik]
