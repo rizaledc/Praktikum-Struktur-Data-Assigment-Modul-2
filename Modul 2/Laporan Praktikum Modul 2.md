@@ -56,7 +56,39 @@ Suhu pada hari ke-4: 27.8 derajat Celcius
 ```
 
 Pada kode di atas, kita membuat array suhu dari hari ke-1 sampai suhu hari ke-7. Kemudian, kita coba akses array pada indeks ke-3 yang digunakan untuk mengakses suhu pada hari ke-4. Kita mengakses pada indeks ke-3 karena indeks pada array dimulai dari 0.
- 
+
+**2. Array Dua Dimensi**
+
+Array dua dimensi merupakan sekumpulan elemen data yag sama, namun disusun dalam dua dimensi seperti baris dan kolom. Elemen yang ada pada array dua dimensi ini dibedakan menjadi dua seperti indeks baris dan indeks kolom.
+
+Contoh array dua dimensi:
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Deklarasi array 2 dimensi untuk menyimpan nilai siswa
+    // Terdapat 3 siswa dan 4 mata pelajaran
+    int nilai[3][4] = {
+        {80, 75, 85, 90}, // Nilai siswa 1 untuk 4 mata pelajaran
+        {70, 85, 80, 75}, // Nilai siswa 2 untuk 4 mata pelajaran
+        {90, 80, 85, 95}  // Nilai siswa 3 untuk 4 mata pelajaran
+    };
+
+    // Mengakses dan mencetak nilai siswa 2 untuk mata pelajaran ke-3
+    cout << "Nilai siswa 2 untuk mata pelajaran ke-3: " << nilai[1][2] << endl;
+
+    return 0;
+}
+```
+Output:
+```C++
+Nilai siswa 2 untuk mata pelajaran ke-3: 80
+```
+
+Pada kode di atas, kita dapat mengakses berbagai elemen yang ada pada array dua dimensi yang ada. Sebagai contoh jika diakses adalah Nilai siswa ke-2 pada pelajaran ke-3. Di akses dengan nilai[1][2], maka kita akan mengakses indeks ke-1 untuk akses elemen ke-2 yang mengacu pada baris dan indeks ke-2 untuk elemen ke-3 yang berikutnya mengacu pada kolom.
+
 ## Guided 
 
 ### 1. [Nama Topik]
