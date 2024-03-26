@@ -195,7 +195,7 @@ int main()
 }
 ```
 
-Penjelasan:
+**Penjelasan:**
 
 Output :
 
@@ -248,9 +248,82 @@ Data Array[1] [2] [2] = 1
 321
 ```
 
-Penjelasan:
+**Penjelasan:**
 
 #### Full Code Screenshot
+
+
+### 2. Guided 2
+#### Nilai Maksimum pada Array
+
+Program Mencari Nilai Maksimum pada Array :
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Deklarasi variabel
+    int maks, a, lokasi;
+
+    // Meminta pengguna untuk memasukkan panjang array
+    cout << "Masukkan panjang array  : ";
+    cin >> a;
+
+    // Memeriksa apakah panjang array valid
+    if (a <= 0){
+        cout << "Panjang array harus lebih besar dari 0"<<endl;
+        return 1; // Mengembalikan 1 menandakan kesalahan
+    }
+
+    // Deklarasi array dengan panjang sesuai input pengguna
+    int array[a];
+
+    // Meminta pengguna untuk memasukkan nilai-nilai array
+    cout <<"Masukkan "<<a<<" angka\n";
+    for (int i = 0 ; i < a ; i++) {
+        cout<<"Array ke-"<<(i+1)<<": ";
+        cin >> array[i];
+    }
+
+    // Inisialisasi nilai maksimum dengan elemen pertama array
+    maks = array[0];
+    lokasi = 0;
+
+    // Mencari nilai maksimum dan lokasinya dalam array
+    for (int i = 1 ; i < a; i++) {
+        if (array[i] > maks) {
+            maks = array[i];
+            lokasi = i; // Memperbarui lokasi nilai maksimum
+        }
+    }
+
+    // Menampilkan nilai maksimum dan lokasinya dalam array
+    cout << "Nilai maksimum adalah " << maks << " Berada pada array ke-" << (lokasi + 1) << endl;
+    
+    return 0; // Mengembalikan 0 menandakan program berjalan dengan sukses
+}
+```
+
+**Penjelasan:**
+
+Output:
+
+```C++
+Masukkan panjang array  : 3
+Masukkan 3 angka
+Array ke-1: 1
+Array ke-2: 7
+Array ke-3: 2
+Nilai maksimum adalah 7 Berada pada array ke-2
+```
+
+**Penjelasan:**
+
+#### Full Code Screenshot
+
+
+
 ## Unguided 
 
 ### 1. [Soal]
@@ -270,15 +343,19 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
+
 ![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
 
 
 ## Kesimpulan
+
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
+
 Ed.D, P. Z., & Afifah, W. (2021). Analisis Konten Etnografi & Grounded 
 Theory, dan Hermeneutika Dalam Penelitian. Jakarta Timur: PT Bumi 
 Askara.
+
 Hanief, S., & Jepriana, I. (2020). Konsep Algoritme dan Aplikasinya Dalam 
 Bahasa Pemrograman C++. Penerbit Andi. Yogyakarta: Andi.
