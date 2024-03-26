@@ -326,25 +326,93 @@ Nilai maksimum adalah 7 Berada pada array ke-2
 
 ## Unguided 
 
-### 1. [Soal]
+### 1.  Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!
+Data Array : 1 2 3 4 5 6 7 8 9 10
+Nomor Genap : 2, 4, 6, 8 , 10,
+Nomor Ganjil : 1, 3, 5, 7, 9,
+Noted: Inputan boleh berubah.
 
+Kode Program:
 ```C++
+//Menggunakan library input/output dan struktur data
 #include <iostream>
+#include <sstream>
+#include <vector>
 using namespace std;
 
+//Membuat kode inti atau main code
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+    string name; // membuat variabel
+    //membuat vektor bertipe integer
+    vector<int> numbers;
+    vector<int> evenNumbers;
+    vector<int> oddNumbers;
+    
+    //meminta inputan
+    cout << "Masukkan nama Anda:" << endl;
+    getline(cin, name);
+    cout<<endl;
+    //Menyapa pengguna dan meminta inputan angka
+    cout<<"Halo, "<< name << ". Selamat datang di Program pemilihan angka genap dan ganjil." << endl<<endl;
+    cout << "Masukkan angka anda, pisahkan dengan spasi!" << endl;
+    cout << "Klik enter untuk menampilkan hasil !" << endl;
+    string input;
+    getline(cin, input);
+    
+    // Membaca angka-angka dari baris input
+    stringstream ss(input);
+    int num;
+    while (ss >> num) {
+        numbers.push_back(num);
+    }
+    
+    // Memisahkan angka genap dan ganjil dari inputan pengguna
+    for (int num : numbers) {
+        if (num % 2 == 0) { //menggunakan modulus
+            evenNumbers.push_back(num);  //jika habis di bagi 2 masuk ke sini
+        } else {
+            oddNumbers.push_back(num); //jika tidak habis masuk kesini
+        }
+    }
+    
+    // Menampilkan angka-angka genap
+    cout << "Angka genap: ";
+    for (int num : evenNumbers) {
+        cout << num << " ";
+    }
+    cout << endl;
+    
+    // Menampilkan angka-angka ganjil
+    cout << "Angka ganjil: ";
+    for (int num : oddNumbers) {
+        cout << num << " ";
+    }
+    cout << endl<<endl;
+    
     return 0;
 }
-```
-#### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Output:
+
+```C++
+Masukkan nama Anda:
+Rizal Wahyu Pratama 
+
+Halo, Rizal Wahyu Pratama. Selamat datang di Program pemilihan angka genap dan ganjil.
+
+Masukkan angka anda, pisahkan dengan spasi!
+Klik enter untuk menampilkan hasil !
+12 14 13 15 17 18 101 107 108 100 109
+Angka genap: 12 14 18 108 100
+Angka ganjil: 13 15 17 101 107 109
+```
 
 #### Full code Screenshot:
 
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+
+
+#### Screenshot Output
+
 
 
 ## Kesimpulan
