@@ -89,6 +89,47 @@ Nilai siswa 2 untuk mata pelajaran ke-3: 80
 
 Pada kode di atas, kita dapat mengakses berbagai elemen yang ada pada array dua dimensi yang ada. Sebagai contoh jika diakses adalah Nilai siswa ke-2 pada pelajaran ke-3. Di akses dengan nilai[1][2], maka kita akan mengakses indeks ke-1 untuk akses elemen ke-2 yang mengacu pada baris dan indeks ke-2 untuk elemen ke-3 yang berikutnya mengacu pada kolom.
 
+**3. Array Multidimensi**
+
+Array multidimensi memiliki kapasitas memori yang lebih besar dibandingkan dengan array satu dimensi dan dua dimensi. Dalam array multidimensi ini setiap elemen dikenali oleh indeks yang sama dengan jumlah dimensi yang ada. 
+
+Berikut ini merupakan contoh dari array multidimensi:
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Deklarasi array 3 dimensi untuk menyimpan data koordinat titik dalam ruang 3D
+    // Array ini memiliki dimensi 2x3x3
+    int koordinat[2][3][3] = {
+        {   // Untuk setiap koordinat[0][i][j]
+            {1, 2, 3},  // (x, y, z) = (1, 2, 3)
+            {4, 5, 6},  // (x, y, z) = (4, 5, 6)
+            {7, 8, 9}   // (x, y, z) = (7, 8, 9)
+        },
+        {   // Untuk setiap koordinat[1][i][j]
+            {10, 11, 12},   // (x, y, z) = (10, 11, 12)
+            {13, 14, 15},   // (x, y, z) = (13, 14, 15)
+            {16, 17, 18}    // (x, y, z) = (16, 17, 18)
+        }
+    };
+
+    // Mengakses dan mencetak koordinat titik pada indeks tertentu
+    cout << "Koordinat titik pada indeks [0][1][2]: (" << koordinat[0][1][0] << ", "
+         << koordinat[0][1][1] << ", " << koordinat[0][1][2] << ")" << endl;
+
+    return 0;
+}
+```
+
+Output:
+```C++
+Koordinat titik pada indeks [0][1][2]: (4, 5, 6)
+```
+
+Contoh di atas memiliki dimensi 2x3x3 yang megartikan terdapat dua lapisan dengan 3 baris serta memiliki 3 kolom di dalamnya. Jadi dengan mengakses koordinat[0][1][2] maka outputnya adalah elemen pada baris ke-2, kolom ketiga, dari matriks pertama dengan output (4,5,6).
+
 ## Guided 
 
 ### 1. [Nama Topik]
@@ -102,7 +143,6 @@ int main() {
     return 0;
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 ## Unguided 
 
