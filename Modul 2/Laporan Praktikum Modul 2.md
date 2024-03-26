@@ -138,9 +138,119 @@ Contoh di atas memiliki dimensi 2x3x3 yang megartikan terdapat dua lapisan denga
 Program Input Array Tiga Dimensi :
 
 ```C++
+#include <iostream>
+using namespace std;
 
+// Program array 3 Dimensi
+int main()
+{
+    //Deklarasi array dengan ukuran 2x3x3
+    int arr[2][3][3];
+
+    // Input elemen-elemen array
+    for (int x = 0; x < 2; x++)
+    {
+        for (int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                cout << "Input Array[" << x << "] [" << y << "] [" << z << "] = ";
+                cin >> arr[x][y][z];
+            }
+        }
+        cout << endl;
+    }
+
+    // Output elemen-elemen array
+    for (int x = 0; x < 2; x++)
+    {
+        for (int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                cout << "Data Array[" << x << "] [" << y << "] [" << z << "] = " << arr[x][y][z] << endl;
+            }
+        }
+    }
+
+    cout << endl;
+
+    // Tampilan array
+    for (int x = 0; x < 2; x++)
+    {
+        for (int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                // Menampilkan elemen array dengan menggunakan ends agar elemen-elemen dalam satu baris dipisahkan dengan spasi
+                cout << arr[x][y][z] << ends;
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+
+    // Mengembalikan nilai 0 menandakan program berjalan
+    return 0;
+}
 ```
 
+Penjelasan:
+
+Output :
+
+```C++
+Input Array[0] [0] [0] = 1
+Input Array[0] [0] [1] = 2
+Input Array[0] [0] [2] = 3
+Input Array[0] [1] [0] = 4
+Input Array[0] [1] [1] = 5
+Input Array[0] [1] [2] = 6
+Input Array[0] [2] [0] = 7
+Input Array[0] [2] [1] = 8
+Input Array[0] [2] [2] = 9
+
+Input Array[1] [0] [0] = 9
+Input Array[1] [0] [1] = 8
+Input Array[1] [0] [2] = 7
+Input Array[1] [1] [0] = 6
+Input Array[1] [1] [1] = 5
+Input Array[1] [1] [2] = 4
+Input Array[1] [2] [0] = 3
+Input Array[1] [2] [1] = 2
+Input Array[1] [2] [2] = 1
+
+Data Array[0] [0] [0] = 1
+Data Array[0] [0] [1] = 2
+Data Array[0] [0] [2] = 3
+Data Array[0] [1] [0] = 4
+Data Array[0] [1] [1] = 5
+Data Array[0] [1] [2] = 6
+Data Array[0] [2] [0] = 7
+Data Array[0] [2] [1] = 8
+Data Array[0] [2] [2] = 9
+Data Array[1] [0] [0] = 9
+Data Array[1] [0] [1] = 8
+Data Array[1] [0] [2] = 7
+Data Array[1] [1] [0] = 6
+Data Array[1] [1] [1] = 5
+Data Array[1] [1] [2] = 4
+Data Array[1] [2] [0] = 3
+Data Array[1] [2] [1] = 2
+Data Array[1] [2] [2] = 1
+
+123
+456
+789
+
+987
+654
+321
+```
+
+Penjelasan:
+
+#### Full Code Screenshot
 ## Unguided 
 
 ### 1. [Soal]
