@@ -132,16 +132,13 @@ Contoh di atas memiliki dimensi 2x3x3 yang megartikan terdapat dua lapisan denga
 
 ## Guided 
 
-### 1. [Nama Topik]
+### 1. Guided 1
+#### Matriks 3 Dimensi
+
+Program Input Array Tiga Dimensi :
 
 ```C++
-#include <iostream>
-using namespace std;
 
-int main() {
-    cout << "ini adalah file code guided praktikan" << endl;
-    return 0;
-}
 ```
 
 ## Unguided 
