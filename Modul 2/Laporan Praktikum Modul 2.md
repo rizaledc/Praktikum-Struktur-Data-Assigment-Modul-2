@@ -135,40 +135,388 @@ Contoh di atas memiliki dimensi 2x3x3 yang megartikan terdapat dua lapisan denga
 ### 1. Guided 1
 #### Matriks 3 Dimensi
 
-Program Input Array Tiga Dimensi :
+#### Program Input Array Tiga Dimensi :
 
 ```C++
+#include <iostream>
+using namespace std;
 
+// Program array 3 Dimensi
+int main()
+{
+    //Deklarasi array dengan ukuran 2x3x3
+    int arr[2][3][3];
+
+    // Input elemen-elemen array
+    for (int x = 0; x < 2; x++)
+    {
+        for (int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                cout << "Input Array[" << x << "] [" << y << "] [" << z << "] = ";
+                cin >> arr[x][y][z];
+            }
+        }
+        cout << endl;
+    }
+
+    // Output elemen-elemen array
+    for (int x = 0; x < 2; x++)
+    {
+        for (int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                cout << "Data Array[" << x << "] [" << y << "] [" << z << "] = " << arr[x][y][z] << endl;
+            }
+        }
+    }
+
+    cout << endl;
+
+    // Tampilan array
+    for (int x = 0; x < 2; x++)
+    {
+        for (int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                // Menampilkan elemen array dengan menggunakan ends agar elemen-elemen dalam satu baris dipisahkan dengan spasi
+                cout << arr[x][y][z] << ends;
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+
+    // Mengembalikan nilai 0 menandakan program berjalan
+    return 0;
+}
 ```
 
-## Unguided 
+**Penjelasan:**
 
-### 1. [Soal]
+#### Bagian 1
+
+```C++
+#include <iostream>
+using namespace std;
+```
+
+Bagian ini merupakan bagian untuk mengincludekan libraries input dan output. Berikutnya kita akan mendeklarasikan namespace std, sehingga tidak perlu menuliskan std pada setiap penggunaan fungsi.
+
+#### Bagian 2
+
+```C++
+int main()
+{
+    // Main program berada di dalam fungsi utama (main).
+}
+```
+
+Bagian 2 ini merupakan bagian inti atau bagian yang pertama kali dieksekusi dalam fungsi.  Semua kode program akan dieksekusi mulai dari bagian ini.
+
+#### Bagian 3
+
+```C++
+int arr[2][3][3];
+```
+
+Mendeklarasi array tiga dimensi dengan ukuran 2 x 3 x 3 dengan dua lapisan, dimana setiap lapisan berisi array 3 x 3.
+
+#### Bagian 4
+
+```C++
+for (int x = 0; x < 2; x++)
+{
+    for (int y = 0; y < 3; y++)
+    {
+        for (int z = 0; z < 3; z++)
+        {
+            // Meminta pengguna untuk memasukkan nilai ke dalam array dan menyimpannya
+            cout << "Input Array[" << x << "] [" << y << "] [" << z << "] = ";
+            cin >> arr[x][y][z]; // Input nilai ke dalam array
+        }
+    }
+    cout << endl; // Mencetak baris kosong setelah setiap iterasi x selesai
+}
+```
+
+Bagian ini membuat nested loop yang dapat mengiterasi setiap elemen di dalam array serta meminta pengguna untuk memasukkan nilai pada setiap elemen.
+
+#### Bagian 5
+
+```C++
+for (int x = 0; x < 2; x++)
+{
+    for (int y = 0; y < 3; y++)
+    {
+        for (int z = 0; z < 3; z++)
+        {
+            // Mencetak nilai dari setiap elemen array
+            cout << "Data Array[" << x << "] [" << y << "] [" << z << "] = " << arr[x][y][z] << endl;
+        }
+    }
+}
+```
+
+Bagian ini merupakan Output dari elemen array. Bagian ini juga menggunakan nested loop yang dapat digunakan untuk menginterasi setiap elemen dalam array serta mencetak nilainya ke layar.
+
+#### Bagian 6
+
+```C++
+for (int x = 0; x < 2; x++)
+{
+    for (int y = 0; y < 3; y++)
+    {
+        for (int z = 0; z < 3; z++)
+        {
+            // Menampilkan nilai dari setiap elemen array dengan menggunakan ends agar elemen-elemen dalam satu baris dipisahkan dengan spasi
+            cout << arr[x][y][z] << ends;
+        }
+        cout << endl;
+    }
+    cout << endl;
+}
+return 0;
+```
+
+Bagian ini digunakan untuk mendisplaykan array. Bagian ini juga menggunakan nested lopp untuk mengiterasi setiap elemen yang ada dan mencetaknya ke layar. Penggunaan ends ini dapat digunakan untuk memisahkan setiap elemen yang ada pada array dengan spasi. Lalu bagian return 0 juga digunakan untuk memastikan program berjalan sampai akhir tanpa ada kesalahan.
+
+#### Output :
+
+```C++
+Input Array[0] [0] [0] = 1
+Input Array[0] [0] [1] = 2
+Input Array[0] [0] [2] = 3
+Input Array[0] [1] [0] = 4
+Input Array[0] [1] [1] = 5
+Input Array[0] [1] [2] = 6
+Input Array[0] [2] [0] = 7
+Input Array[0] [2] [1] = 8
+Input Array[0] [2] [2] = 9
+
+Input Array[1] [0] [0] = 9
+Input Array[1] [0] [1] = 8
+Input Array[1] [0] [2] = 7
+Input Array[1] [1] [0] = 6
+Input Array[1] [1] [1] = 5
+Input Array[1] [1] [2] = 4
+Input Array[1] [2] [0] = 3
+Input Array[1] [2] [1] = 2
+Input Array[1] [2] [2] = 1
+
+Data Array[0] [0] [0] = 1
+Data Array[0] [0] [1] = 2
+Data Array[0] [0] [2] = 3
+Data Array[0] [1] [0] = 4
+Data Array[0] [1] [1] = 5
+Data Array[0] [1] [2] = 6
+Data Array[0] [2] [0] = 7
+Data Array[0] [2] [1] = 8
+Data Array[0] [2] [2] = 9
+Data Array[1] [0] [0] = 9
+Data Array[1] [0] [1] = 8
+Data Array[1] [0] [2] = 7
+Data Array[1] [1] [0] = 6
+Data Array[1] [1] [1] = 5
+Data Array[1] [1] [2] = 4
+Data Array[1] [2] [0] = 3
+Data Array[1] [2] [1] = 2
+Data Array[1] [2] [2] = 1
+
+123
+456
+789
+
+987
+654
+321
+```
+
+**Penjelasan:**
+
+Dari kode yang telah dibuat, menghasilkan output seperti di atas. Dimana pada output akan ditampilkan angka-angka array dari yang kita inputkan. Lalu angka-angka tersebut akan di bentuk menjadi array 2x3x3. 
+
+#### Full Code Screenshot
+
+
+### 2. Guided 2
+#### Nilai Maksimum pada Array
+
+Program Mencari Nilai Maksimum pada Array :
 
 ```C++
 #include <iostream>
 using namespace std;
 
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
-    return 0;
+    // Deklarasi variabel
+    int maks, a, lokasi;
+
+    // Meminta pengguna untuk memasukkan panjang array
+    cout << "Masukkan panjang array  : ";
+    cin >> a;
+
+    // Memeriksa apakah panjang array valid
+    if (a <= 0){
+        cout << "Panjang array harus lebih besar dari 0"<<endl;
+        return 1; // Mengembalikan 1 menandakan kesalahan
+    }
+
+    // Deklarasi array dengan panjang sesuai input pengguna
+    int array[a];
+
+    // Meminta pengguna untuk memasukkan nilai-nilai array
+    cout <<"Masukkan "<<a<<" angka\n";
+    for (int i = 0 ; i < a ; i++) {
+        cout<<"Array ke-"<<(i+1)<<": ";
+        cin >> array[i];
+    }
+
+    // Inisialisasi nilai maksimum dengan elemen pertama array
+    maks = array[0];
+    lokasi = 0;
+
+    // Mencari nilai maksimum dan lokasinya dalam array
+    for (int i = 1 ; i < a; i++) {
+        if (array[i] > maks) {
+            maks = array[i];
+            lokasi = i; // Memperbarui lokasi nilai maksimum
+        }
+    }
+
+    // Menampilkan nilai maksimum dan lokasinya dalam array
+    cout << "Nilai maksimum adalah " << maks << " Berada pada array ke-" << (lokasi + 1) << endl;
+    
+    return 0; // Mengembalikan 0 menandakan program berjalan dengan sukses
 }
 ```
-#### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+**Penjelasan:**
+
+Output:
+
+```C++
+Masukkan panjang array  : 3
+Masukkan 3 angka
+Array ke-1: 1
+Array ke-2: 7
+Array ke-3: 2
+Nilai maksimum adalah 7 Berada pada array ke-2
+```
+
+**Penjelasan:**
+
+#### Full Code Screenshot
+
+
+
+## Unguided 
+
+### 1.  Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!
+
+Data Array : 1 2 3 4 5 6 7 8 9 10
+
+Nomor Genap : 2, 4, 6, 8 , 10,
+
+Nomor Ganjil : 1, 3, 5, 7, 9,
+
+Noted: Inputan boleh berubah.
+
+Kode Program:
+```C++
+//Menggunakan library input/output dan struktur data
+#include <iostream>
+#include <sstream>
+#include <vector>
+using namespace std;
+
+//Membuat kode inti atau main code
+int main() {
+    string name; // membuat variabel
+    //membuat vektor bertipe integer
+    vector<int> numbers;
+    vector<int> evenNumbers;
+    vector<int> oddNumbers;
+    
+    //meminta inputan
+    cout << "Masukkan nama Anda:" << endl;
+    getline(cin, name);
+    cout<<endl;
+    //Menyapa pengguna dan meminta inputan angka
+    cout<<"Halo, "<< name << ". Selamat datang di Program pemilihan angka genap dan ganjil." << endl<<endl;
+    cout << "Masukkan angka anda, pisahkan dengan spasi!" << endl;
+    cout << "Klik enter untuk menampilkan hasil !" << endl;
+    string input;
+    getline(cin, input);
+    
+    // Membaca angka-angka dari baris input
+    stringstream ss(input);
+    int num;
+    while (ss >> num) {
+        numbers.push_back(num);
+    }
+    
+    // Memisahkan angka genap dan ganjil dari inputan pengguna
+    for (int num : numbers) {
+        if (num % 2 == 0) { //menggunakan modulus
+            evenNumbers.push_back(num);  //jika habis di bagi 2 masuk ke sini
+        } else {
+            oddNumbers.push_back(num); //jika tidak habis masuk kesini
+        }
+    }
+    
+    // Menampilkan angka-angka genap
+    cout << "Angka genap: ";
+    for (int num : evenNumbers) {
+        cout << num << " ";
+    }
+    cout << endl;
+    
+    // Menampilkan angka-angka ganjil
+    cout << "Angka ganjil: ";
+    for (int num : oddNumbers) {
+        cout << num << " ";
+    }
+    cout << endl<<endl;
+    
+    return 0;
+}
+
+Output:
+
+```C++
+Masukkan nama Anda:
+Rizal Wahyu Pratama 
+
+Halo, Rizal Wahyu Pratama. Selamat datang di Program pemilihan angka genap dan ganjil.
+
+Masukkan angka anda, pisahkan dengan spasi!
+Klik enter untuk menampilkan hasil !
+12 14 13 15 17 18 101 107 108 100 109
+Angka genap: 12 14 18 108 100
+Angka ganjil: 13 15 17 101 107 109
+```
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+
+
+
+#### Screenshot Output
+
 
 
 ## Kesimpulan
+
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
+
 Ed.D, P. Z., & Afifah, W. (2021). Analisis Konten Etnografi & Grounded 
 Theory, dan Hermeneutika Dalam Penelitian. Jakarta Timur: PT Bumi 
 Askara.
+
 Hanief, S., & Jepriana, I. (2020). Konsep Algoritme dan Aplikasinya Dalam 
 Bahasa Pemrograman C++. Penerbit Andi. Yogyakarta: Andi.
