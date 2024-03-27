@@ -337,6 +337,8 @@ Data Array[1] [2] [2] = 1
 
 **Penjelasan:**
 
+Dari kode yang telah dibuat, menghasilkan output seperti di atas. Dimana pada output akan ditampilkan angka-angka array dari yang kita inputkan. Lalu angka-angka tersebut akan di bentuk menjadi array 2x3x3. 
+
 #### Full Code Screenshot
 
 
