@@ -1134,7 +1134,7 @@ Pada output kode di atas, user akan diminta untuk memasukkan panjang array terle
 #### Full code Screenshot:
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/Unguided3.png">
 </p>
 
 #### Screenshot Output
@@ -1145,7 +1145,7 @@ Pada output kode di atas, user akan diminta untuk memasukkan panjang array terle
 
 ## Kesimpulan
 
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Dengan mempelajari array dalam bahasa pemrograman C++ kita dapat mengetahui berbagai hal yang baru dan penting. Dimana kita dapat mengetahui bagaimana kemampuan array dalam menyimpan dan mengelola data secara efisien di dalam program. Dalam mata kuliah ini kita mengetahui bahwa array dapat berupa sat dimensi, dua dimensi, hingga multi dimensi dengan masing-masing kegunaannya. Kita dapat melihat bagaimana array dapat digunakan untuk menyimpan data tunggal, data tabel, maupun data kompleks dalam array multi dimensi. Melalui pemahaman yang tinggi di bidang array, seorang programer dapat mengakses serta memanipulasi data dengan lebih efisien serta optimalisasi kerja dalam pengembangan aplikasi yang lebih canggih. 
 
 ## Referensi
 
