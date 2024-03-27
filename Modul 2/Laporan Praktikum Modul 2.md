@@ -345,7 +345,11 @@ Dari kode yang telah dibuat, menghasilkan output seperti di atas. Dimana pada ou
   <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/Guided01.png" alt="Alt Text">
 </p>
 
+#### Screenshot Output
 
+<p align="center">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/OutputGuided1.png" alt="Alt Text">
+</p>
 
 ### 2. Guided 2
 #### Nilai Maksimum pada Array
@@ -501,6 +505,12 @@ Pada output, pengguna diminta untuk memasukkan panjang array yang diinginkan mis
 
 <p align="center">
   <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/Guided02.png" alt="Alt Text">
+</p>
+
+#### Screenshot Output
+
+<p align="center">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/OutputGuided2.png" alt="Alt Text">
 </p>
 
 ## Unguided 
@@ -705,7 +715,7 @@ Pada bagian output ini pertama user akan diminta untuk memasukkan namanya, lalu 
 #### Screenshot Output
 
 <p align="center">
-  <img src="" alt="Alt Text">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/OutputUnguided1.png" alt="Alt Text">
 </p>
 
 ### 2.  Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
@@ -886,7 +896,7 @@ Pada output di atas, pengguna diminta untuk menginputkan ukuran array 3 dimensin
 #### Screenshot Output
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/OutputUnguided2.png">
 </p>
 
 ### 3.  Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata– rata dari suatu array dengan input yang dimasukan oleh user!
@@ -1130,7 +1140,7 @@ Pada output kode di atas, user akan diminta untuk memasukkan panjang array terle
 #### Screenshot Output
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/OutputUnguided3.png">
 </p>
 
 ## Kesimpulan
