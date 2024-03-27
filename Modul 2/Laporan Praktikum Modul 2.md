@@ -350,7 +350,7 @@ Dari kode yang telah dibuat, menghasilkan output seperti di atas. Dimana pada ou
 ### 2. Guided 2
 #### Nilai Maksimum pada Array
 
-Program Mencari Nilai Maksimum pada Array :
+#### Program Mencari Nilai Maksimum pada Array :
 
 ```C++
 #include <iostream>
@@ -482,7 +482,7 @@ Pada bagian 5 ini, merupakan program yang mencari nilai maksimum serta lokasi da
 
 Dari kode di atas pada bagian 6, cout digunakan untuk menampilkan nilai maksimum dan lokasi arraynya. return 0 digunakan untuk mengembalikan nilai 0 dan memastikan bahwa program berjalan sampai akhir.
 
-Output:
+#### Output:
 
 ```C++
 Masukkan panjang array  : 3
@@ -495,9 +495,13 @@ Nilai maksimum adalah 7 Berada pada array ke-2
 
 **Penjelasan:**
 
+Pada output, pengguna diminta untuk memasukkan panjang array yang diinginkan misalnya 3. Lalu pengguna diminta memasukkan 3 angka untuk mengisi array sebagai contoh 1, 7, 2. Jadi nilai maksimum adalah 7 yang berada pada array ke-2.
+
 #### Full Code Screenshot
 
-
+<p align="center">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/Guided02.png" alt="Alt Text">
+</p>
 
 ## Unguided 
 
