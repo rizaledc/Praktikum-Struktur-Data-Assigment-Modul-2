@@ -135,7 +135,7 @@ Contoh di atas memiliki dimensi 2x3x3 yang megartikan terdapat dua lapisan denga
 ### 1. Guided 1
 #### Matriks 3 Dimensi
 
-Program Input Array Tiga Dimensi :
+#### Program Input Array Tiga Dimensi :
 
 ```C++
 #include <iostream>
@@ -197,7 +197,94 @@ int main()
 
 **Penjelasan:**
 
-Output :
+#### Bagian 1
+
+```C++
+#include <iostream>
+using namespace std;
+```
+
+Bagian ini merupakan bagian untuk mengincludekan libraries input dan output. Berikutnya kita akan mendeklarasikan namespace std, sehingga tidak perlu menuliskan std pada setiap penggunaan fungsi.
+
+#### Bagian 2
+
+```C++
+int main()
+{
+    // Main program berada di dalam fungsi utama (main).
+}
+```
+
+Bagian 2 ini merupakan bagian inti atau bagian yang pertama kali dieksekusi dalam fungsi.  Semua kode program akan dieksekusi mulai dari bagian ini.
+
+#### Bagian 3
+
+```C++
+int arr[2][3][3];
+```
+
+Mendeklarasi array tiga dimensi dengan ukuran 2 x 3 x 3 dengan dua lapisan, dimana setiap lapisan berisi array 3 x 3.
+
+#### Bagian 4
+
+```C++
+for (int x = 0; x < 2; x++)
+{
+    for (int y = 0; y < 3; y++)
+    {
+        for (int z = 0; z < 3; z++)
+        {
+            // Meminta pengguna untuk memasukkan nilai ke dalam array dan menyimpannya
+            cout << "Input Array[" << x << "] [" << y << "] [" << z << "] = ";
+            cin >> arr[x][y][z]; // Input nilai ke dalam array
+        }
+    }
+    cout << endl; // Mencetak baris kosong setelah setiap iterasi x selesai
+}
+```
+
+Bagian ini membuat nested loop yang dapat mengiterasi setiap elemen di dalam array serta meminta pengguna untuk memasukkan nilai pada setiap elemen.
+
+#### Bagian 5
+
+```C++
+for (int x = 0; x < 2; x++)
+{
+    for (int y = 0; y < 3; y++)
+    {
+        for (int z = 0; z < 3; z++)
+        {
+            // Mencetak nilai dari setiap elemen array
+            cout << "Data Array[" << x << "] [" << y << "] [" << z << "] = " << arr[x][y][z] << endl;
+        }
+    }
+}
+```
+
+Bagian ini merupakan Output dari elemen array. Bagian ini juga menggunakan nested loop yang dapat digunakan untuk menginterasi setiap elemen dalam array serta mencetak nilainya ke layar.
+
+#### Bagian 6
+
+```C++
+for (int x = 0; x < 2; x++)
+{
+    for (int y = 0; y < 3; y++)
+    {
+        for (int z = 0; z < 3; z++)
+        {
+            // Menampilkan nilai dari setiap elemen array dengan menggunakan ends agar elemen-elemen dalam satu baris dipisahkan dengan spasi
+            cout << arr[x][y][z] << ends;
+        }
+        cout << endl;
+    }
+    cout << endl;
+}
+return 0;
+```
+
+Bagian ini digunakan untuk mendisplaykan array. Bagian ini juga menggunakan nested lopp untuk mengiterasi setiap elemen yang ada dan mencetaknya ke layar. Penggunaan ends ini dapat digunakan untuk memisahkan setiap elemen yang ada pada array dengan spasi. Lalu bagian return 0 juga digunakan untuk memastikan program berjalan sampai akhir tanpa ada kesalahan.
+
+#### Output :
 
 ```C++
 Input Array[0] [0] [0] = 1
