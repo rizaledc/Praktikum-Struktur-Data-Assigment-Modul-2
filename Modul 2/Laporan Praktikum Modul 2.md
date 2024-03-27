@@ -341,6 +341,11 @@ Dari kode yang telah dibuat, menghasilkan output seperti di atas. Dimana pada ou
 
 #### Full Code Screenshot
 
+<p align="center">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/Guided01.png" alt="Alt Text">
+</p>
+
+
 
 ### 2. Guided 2
 #### Nilai Maksimum pada Array
