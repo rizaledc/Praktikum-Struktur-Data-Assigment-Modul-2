@@ -401,6 +401,87 @@ int main() {
 
 **Penjelasan:**
 
+#### Bagian 1
+
+```C++
+#include <iostream>
+using namespace std;
+```
+
+Pada bagian di atas merupakan bagian menggunakan library <iostream> yang digunakan untuk input dan output lalu namespace std, agar setiap menggunakan fungsi tidak perlu menginputkan std lagi.
+
+#### Bagian 2
+
+```C++
+int main() {
+    // Deklarasi variabel
+    int maks, a, lokasi;
+
+    // Meminta pengguna untuk memasukkan panjang array
+    cout << "Masukkan panjang array  : ";
+    cin >> a;
+```
+
+Pada bagian di atas merupakan bagian fungsi utama atau fungsi main(). Fungsi ini akan dieksekusi terlebih dahulu ketika di Run. Pada bagian di atas kita akan mendeklarasikan variabel maks, a, dan lokasi dimana variabel ini digunakan untuk menyimpan nilai maksimum, panjang array, dan lokasi nilai maksimum di dalam array. Pada bagian ini juga meminta inputan dari pengguna menggunakan cout dan mengeluarkan menggunakan cin.
+
+#### Bagian 3
+
+```C++
+    // Memeriksa apakah panjang array valid
+    if (a <= 0){
+        cout << "Panjang array harus lebih besar dari 0"<<endl;
+        return 1; // Mengembalikan 1 menandakan kesalahan
+    }
+```
+
+Pada bagian ini dapat memeriksa panjang array menggunakan if (a <= 0). Apabila panjang array 0 atau tidak valid maka pesan akan dicetak lalu mereturn 1.
+
+#### Bagian 4
+
+```C++
+    // Deklarasi array dengan panjang sesuai input pengguna
+    int array[a];
+
+    // Meminta pengguna untuk memasukkan nilai-nilai array
+    cout <<"Masukkan "<<a<<" angka\n";
+    for (int i = 0 ; i < a ; i++) {
+        cout<<"Array ke-"<<(i+1)<<": ";
+        cin >> array[i];
+    }
+```
+
+Pada bagian 4 di atas, dapat mendeklarasikan dan mengisi array dengan panjang a sesuai dengan inputan pengguna. Terdapat fungsi cin untuk mengambil inputan dari pengguna dan terdapat for yang digunakan untuk melooping array dengan nilai-nilai yang telah dimasukkan user.
+
+#### Bagian 5
+
+```C++
+    // Inisialisasi nilai maksimum dengan elemen pertama array
+    maks = array[0];
+    lokasi = 0;
+
+    // Mencari nilai maksimum dan lokasinya dalam array
+    for (int i = 1 ; i < a; i++) {
+        if (array[i] > maks) {
+            maks = array[i];
+            lokasi = i; // Memperbarui lokasi nilai maksimum
+        }
+    }
+```
+
+Pada bagian 5 ini, merupakan program yang mencari nilai maksimum serta lokasi dari nilai maksimum tersebut. maks = arrat[0] ini menginisiasi maks dengan nilai pertama di dalam array sama dengan lokasi = 0 yang menunjukkan nilai maksimum terkini. Fungsi for yang ada di dalamnya digunakan untuk menelusuri semua elemen array dimulai dari elemen kedua. Pada setiap iterasi nilai maks dan lokasi selalu diperbaharui.
+
+#### Bagian 6
+
+```C++
+    // Menampilkan nilai maksimum dan lokasinya dalam array
+    cout << "Nilai maksimum adalah " << maks << " Berada pada array ke-" << (lokasi + 1) << endl;
+    
+    return 0; // Mengembalikan 0 menandakan program berjalan dengan sukses
+}
+```
+
+Dari kode di atas pada bagian 6, cout digunakan untuk menampilkan nilai maksimum dan lokasi arraynya. return 0 digunakan untuk mengembalikan nilai 0 dan memastikan bahwa program berjalan sampai akhir.
+
 Output:
 
 ```C++
